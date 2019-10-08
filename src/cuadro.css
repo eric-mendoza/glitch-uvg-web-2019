@@ -1,19 +1,18 @@
 .cuadro{
     position: absolute;
     margin: 0 auto;
-    top: 100px;
     height: 261px;
     width: 280px;
     border-style: ridge;
     display: grid;
-    grid-template-rows: 1fr, 1fr;
+    grid-template-rows: 1fr;
     background: white;
     top: 5%;
     right: 2%;
 }
 
 .imagen{
-    height: 80.2px;
+    height: 80px;
 }
 
 

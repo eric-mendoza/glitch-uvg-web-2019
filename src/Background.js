@@ -1,10 +1,18 @@
 import React, { Component } from 'react';
 import './App.css';
 
-export default class Background extends Component {
+class Background extends Component {
+  constructor(props){
+    super(props);
+
+    this.state = {
+    };
+  }
+
   render() {
-    return (
-      <div className="background">{this.props.children}</div>
-    )
+    const { children } = this.props;
+    return <div className="background">{children}</div>;
   }
 }
+
+export default Background;
