@@ -3,6 +3,8 @@
     "include": [
       "^package\\.json$",
       "^\\.env$"
+    ],
+    "files": [
     ]
   },
   "restart": {
@@ -13,6 +15,9 @@
     ],
     "include": [
       "\\.json"
+    ],
+    "files": [
+
     ]
   },
   "throttle": 100

@@ -10,13 +10,13 @@ You will also see any lint errors in the editor.<br>
 ## Getting started
 First of all, remix this app! Remixing will create your own copy of the app that is unique to you -- any changes you make will only apply to your version. Make sure you change the description in your version so you remember what the app does when you're looking at it later.
 
-Edit `src/App.js` to start customizing your app.
+Edit `src/App.jsx` to start customizing your app.
 
 ## Code
 
 For the project to build, these files must exist with exact filenames:
 * `public/index.html` is the page template;
-* `src/index.js` is the JavaScript entry point.
+* `src/index.jsx` is the JavaScript entry point.
 You can delete or rename the other files.
 
 `watch.json` - The [watch.json](https://glitch.com/help/restart/) file in this project configures Glitch to use optimal install and restart rules for developing React apps. 

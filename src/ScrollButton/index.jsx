@@ -5,7 +5,7 @@ export default class ScrollButton extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      section: 1
+      section: 1,
     };
     this.click = this.click.bind(this);
   }
@@ -16,7 +16,7 @@ export default class ScrollButton extends Component {
       window.scrollTo(0, section * 500);
 
       this.setState({
-        section: section + 1
+        section: section + 1,
       });
     }
   }
@@ -24,7 +24,7 @@ export default class ScrollButton extends Component {
   nothing() {
     const { section } = this.state;
     this.setState({
-      section
+      section,
     });
   }
 

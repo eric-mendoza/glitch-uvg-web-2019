@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import ScrollButton from './ScrollButton';
+import ScrollButton from './ScrollButton/index';
 import Background from './Background';
 import Input from './input';
 import Slide from './Slide';
@@ -22,7 +22,7 @@ class App extends Component {
         description:
           'Our privacy policy is simple: we don’t collector share any of your personal information.',
         txtColor: 'fff',
-        shadow: true
+        shadow: true,
       },
       {
         imgPath: 'https://i.imgur.com/oULQirP.png',
@@ -31,7 +31,7 @@ class App extends Component {
         description:
           'We don’t store your search history. We therefore have nothing to sell to advertisers that track you across the Internet.',
         txtColor: 'fff',
-        shadow: true
+        shadow: true,
       },
       {
         imgPath: 'https://i.imgur.com/8lVvOKS.png',
@@ -40,7 +40,7 @@ class App extends Component {
         description:
           'Other search engines track your searches even when you’re in private browsing mode. We don’t track you — period.',
         txtColor: 'fff',
-        shadow: true
+        shadow: true,
       },
       {
         imgPath: 'https://i.imgur.com/aM7We67.png',
@@ -48,8 +48,8 @@ class App extends Component {
         title: 'Switch to DuckDuckGo and take back your privacy!',
         description: 'No tracking, no ad targeting, just searching.',
         txtColor: '365374',
-        shadow: false
-      }
+        shadow: false,
+      },
     ];
   }
 
@@ -64,18 +64,19 @@ class App extends Component {
           <br />
           <br />
           {this.slideList.map(
-            ({ imgPath, bgColor, title, description, txtColor, shadow }) => {
-              return (
-                <Slide
-                  imgPath={imgPath}
-                  bgColor={bgColor}
-                  title={title}
-                  description={description}
-                  txtColor={txtColor}
-                  shadow={shadow}
-                />
-              );
-            }
+            ({
+              imgPath, bgColor, title, description, txtColor, shadow,
+            }) => (
+              <Slide
+                imgPath={imgPath}
+                bgColor={bgColor}
+                title={title}
+                description={description}
+                txtColor={txtColor}
+                shadow={shadow}
+                key={1}
+              />
+            ),
           )}
         </Background>
         <ScrollButton />

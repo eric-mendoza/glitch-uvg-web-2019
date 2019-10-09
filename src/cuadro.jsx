@@ -1,8 +1,8 @@
 import React from 'react';
-import Title from './title/index';
+import Title from './title';
 import Robot from './Robot';
 import DataInfo from './DataInfo';
-import DiscButton from './button-dist/index';
+import DiscButton from './button-dist';
 
 require('./cuadro.css');
 

@@ -6,7 +6,7 @@ export default class Input extends Component {
     super(props);
 
     this.state = {
-      input: ''
+      input: '',
     };
     this.setText = this.setText.bind(this);
     this.clearText = this.clearText.bind(this);
@@ -15,13 +15,13 @@ export default class Input extends Component {
 
   setText() {
     this.setState({
-      input: document.getElementsByName('search')[0].value
+      input: document.getElementsByName('search')[0].value,
     });
   }
 
   clearText() {
     this.setState({
-      input: ''
+      input: '',
     });
     document.getElementsByName('search')[0].value = '';
   }
@@ -41,7 +41,7 @@ export default class Input extends Component {
       marginRight: 'auto',
       display: 'block',
       float: 'none',
-      width: '70%'
+      width: '70%',
     };
 
     const formStyle = {
@@ -54,7 +54,7 @@ export default class Input extends Component {
       border: '1px solid rgba(0,0,0,0.15)',
       boxShadow: '0 2px 3px rgba(0,0,0,0.06)',
       paddingLeft: '.75em',
-      paddingRight: '0.05em'
+      paddingRight: '0.05em',
     };
 
     const inputStyle = {
@@ -79,7 +79,7 @@ export default class Input extends Component {
       textAlign: 'left',
       cursor: 'text',
       margin: '0em',
-      font: '400 13.3333px Arial'
+      font: '400 13.3333px Arial',
     };
 
     const input2Style = {
@@ -92,7 +92,7 @@ export default class Input extends Component {
       minHeight: '1.8em',
       lineHeight: '1.5',
       backgroundColor: 'transparent',
-      backgroundRepeat: 'no-repeat'
+      backgroundRepeat: 'no-repeat',
     };
 
     const inputSearch = {
@@ -105,12 +105,12 @@ export default class Input extends Component {
       minHeight: '1.8em',
       lineHeight: '1.5',
       backgroundColor: '#5b9e4d',
-      backgroundRepeat: 'no-repeat'
+      backgroundRepeat: 'no-repeat',
     };
 
     const divS = {
       display: 'flex',
-      flexDirection: 'row'
+      flexDirection: 'row',
     };
 
     return (

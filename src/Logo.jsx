@@ -9,7 +9,8 @@ class Logo extends React.Component {
           src="https://duckduckgo.com/assets/logo_homepage.normal.v108.svg"
           ref={window.scrollTo(0, 250)}
           className="mainLogo"
-         alt="imagen"/>
+          alt="imagen"
+        />
 
         <span className="tag">conocer más</span>
       </div>
